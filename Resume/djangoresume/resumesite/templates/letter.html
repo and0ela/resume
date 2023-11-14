@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Name -- Cover Letter</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Cover Letter for Dan Wavle."/>
+<meta charset="UTF-8">
+
+<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const currentDateElement = document.getElementById('currentDate');
+        const currentDate = new Date();
+
+        // Create an array of month names for formatting
+        const months = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+        ];
+
+        // Get the day, month, and year
+        const day = currentDate.getDate();
+        const month = currentDate.getMonth();
+        const year = currentDate.getFullYear();
+
+        // Create a formatted date string
+        const formattedDate = `${months[month]} ${day}${getDaySuffix(day)}, ${year}`;
+
+        currentDateElement.textContent = formattedDate;
+    });
+
+    // Function to get the appropriate day suffix (e.g., 1st, 2nd, 3rd)
+    function getDaySuffix(day) {
+        if (day >= 11 && day <= 13) {
+            return 'th';
+        }
+        switch (day % 10) {
+            case 1:
+                return 'st';
+            case 2:
+                return 'nd';
+            case 3:
+                return 'rd';
+            default:
+                return 'th';
+        }
+    }
+</script>
+
+<body id="top">
+<div class="coverLetter">
+        <div id="letterDetails">
+               <h1>Your Name</h1>
+                <h2>Your Title</h2>
+                <ul>
+                        <li><a href="mailto:[insert email here]">your email</a></li>
+                        <li>your phone</li>
+                        <li>your full address</li>
+                        <li><a href="https://[insert domain here]">your website url</a></li>
+                </ul>
+        </div>
+        <div id="vl"></div>
+        <div id="vl2"></div>
+	<div id="hl"></div>
+        <div id="letterBody">
+		<p id="currentDate">October 5, 2023</p>
+		<p></p>
+                <p>To whom it may concern,</p>
+                <p>First Body Paragraph</p>
+                <p>Second Body Paragraph</p>
+                <p>Third Body Paragraph</p>
+                <p>Thank you for your consideration,</p>
+                <p>Sincerely,<br>Your Name</p>
+        </div>
+</div>
+</body>
+</html>

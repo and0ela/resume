@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nicholas Roggenkamp -- Resume</title>
+<!--
+This is a comment. Comments are not displayed in the browser
+&nbsp; ==> 1 unbreakable space character
+&ensp; ==> 2 spaces
+&emsp; ==> 4 spaces
+-->
+
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Resume of Nicholas Roggenkamp."/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="{% static 'images/headshot.jpg' %}" alt="Dan Wavle" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Nicholas Roggenkamp</h1>
+			<h2 class="quickFade delayThree">Computer Science/Media Student</h2>
+			<h3 class="quickFade delayFour"><a href="{% url 'cover_letter' %}" target="_blank">Read my cover letter</a></h3>
+			<h3 class="quickFade delayFour"><a href="{% url 'gallery' %}" target="_blank">View my gallery!</a></h3>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+		<ul>
+                <li>Email:&emsp;&emsp;<a href="mailto:[nicholas.roggenkamp@gmail.com]" target="_blank">  nicholas.roggenkamp@gmail.com</a></li>
+		<li>Phone:&emsp;&ensp;&nbsp;(812) 786-8280</li>
+                <li>Address:&emsp;3136 Brazil Lake Pkwy 
+                    <br> &emsp;&emsp;&emsp;&emsp;&emsp;Georgetown, In 47122</li>
+		<li>Website: &emsp;<a href="https://[insert domain name here]">www.yourdomain.com</a></li>
+		</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Summary</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<p>I am an aspiring computer science and media student. I am currently in film and computer science courses at my high school, and work on personal projects outside of school.</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Key Skills</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+                    			<li>List</li>
+					<li>Key</li>
+                    			<li>Skills</li>
+					<li>Here</li>
+					
+					
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Work Experience</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Title, Company</h2>
+					<p class="subDetails">Location</p>
+					<p class="subDetails">[start date] - Present</p>
+                    <ul class="bullet">
+                        <li>List Important Bullets</li>
+                        <li>Use Action Verbs</li>
+                        <li>Make yourself look good</li>
+                       
+                    </ul>
+				</article>
+                
+                
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+            <div class="sectionContent">
+				<article>
+					<h2>High School</h2>
+					<p class="subDetails">2020-Present</p>
+					<ul class = "list">
+						<li>ICC & Academic Honors</li>
+						<li>Expected Graduation: May 2024</li>
+					</ul>
+					
+				</article>
+			</div>
+
+
+			<div class="sectionContent">
+				<article>
+					<h2>University</h2>
+					<p class="subDetails">Expected Start Date</p>
+					<p>Expected Degree and date of awarding</p>
+				</article>
+				
+
+            </div>
+			<div class="clear"></div>
+		</section>
+        
+		<section>
+            <div class="sectionTitle">
+                <h1>References</h1>
+            </div>
+            <div class="sectionContent">
+                <article>
+                    <h2>Reference name</h2>
+                        <ul class="list">
+                            <li>Title </li>
+                            <li>Company </li>
+                            <!--
+                            <li>557 Renz Avenue 
+                                <br> Sellersburg, Indiana 47172</li>
+                            -->
+                            <li>email </li>
+                            <li>phone <br> &emsp; </li>
+                            <p>Blurb for reference (optional--this is not always done on other resumes)</p>
+                        </ul>
+                </article>
+                
+            </div>
+            <div class="clear"></div>
+        </section>
+
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
